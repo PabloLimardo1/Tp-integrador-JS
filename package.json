@@ -1,0 +1,20 @@
+{
+  "name": "tp-integrador-js",
+  "version": "1.0.0",
+  "description": "Aplicación web con Node.js y Express - Módulo 6: estructura inicial del servidor, rutas, vistas y persistencia básica.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": ["node", "express", "backend"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

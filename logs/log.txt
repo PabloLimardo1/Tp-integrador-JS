@@ -1,0 +1,14 @@
+-- Este archivo se completa automáticamente al ejecutar el servidor y acceder a las rutas --
+[12/9/2026 03:45:40] Acceso a: GET /
+[12/9/2026 03:45:40] Acceso a: GET /style.css
+[12/9/2026 03:45:40] Acceso a: GET /favicon.ico
+[12/9/2026 03:45:51] Acceso a: GET /status
+[12/9/2026 03:46:16] Acceso a: GET /
+[12/9/2026 03:46:16] Acceso a: GET /style.css
+[12/9/2026 03:46:18] Acceso a: GET /status
+[12/9/2026 03:46:23] Acceso a: GET /
+[12/9/2026 03:46:23] Acceso a: GET /style.css
+[12/9/2026 03:46:24] Acceso a: GET /status
+[12/9/2026 03:47:11] Acceso a: GET /
+[12/9/2026 03:47:11] Acceso a: GET /style.css
+[12/9/2026 03:47:13] Acceso a: GET /status
