@@ -9,16 +9,16 @@ Aplicación backend con Node.js y Express. Primera etapa del proyecto: estructur
 
 ## Instalación
 
-1. Cloná el repositorio:
+1. Clona el repositorio:
    ```bash
    git clone <URL-del-repo>
    cd tp-integrador-js
    ```
-2. Instalá las dependencias:
+2. Instala las dependencias:
    ```bash
    npm install
    ```
-3. Creá un archivo `.env` en la raíz con el siguiente contenido (o usá el que ya viene incluido):
+3. Crea un archivo `.env` en la raíz con el siguiente contenido (o usá el que ya viene incluido):
    ```
    PORT=3000
    ```
