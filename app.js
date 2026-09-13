@@ -15,6 +15,8 @@ const routes = require("./routes/index");
 const userRoutes = require("./routes/userRoutes");
 const postRoutes = require("./routes/postRoutes");
 const profileRoutes = require("./routes/profileRoutes");
+const authRoutes = require("./routes/authRoutes");
+const uploadRoutes = require("./routes/uploadRoutes");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -28,6 +30,9 @@ app.use(logger);
 // Middleware de Express: sirve archivos estáticos (html, css, imágenes) desde /public
 app.use(express.static(path.join(__dirname, "public")));
 
+// Módulo 8: hace accesibles públicamente los archivos subidos (ej: http://localhost:3000/uploads/foto.jpg)
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+
 // Middleware para poder leer JSON en el body de las peticiones (necesario para la API)
 app.use(express.json());
 
@@ -38,6 +43,10 @@ app.use("/", routes);
 app.use("/api/users", userRoutes);
 app.use("/api/posts", postRoutes);
 app.use("/api/profiles", profileRoutes);
+
+// Rutas del Módulo 8 (autenticación JWT y subida de archivos)
+app.use("/api/auth", authRoutes);
+app.use("/api/upload", uploadRoutes);
 
 app.listen(PORT, () => {
   console.log(`Servidor iniciado en http://localhost:${PORT}`);
